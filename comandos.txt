@@ -6,4 +6,4 @@ git add nombre-archivo = adiciona el archivo referenciado al stage y lo deja lis
 git add . = adiciona todos los archivos con cambios al stage y los deja listos para commitear
 git rm cache nombre-archivo = elimina un archivo del stage, en el repositorio sigue existiendo
 git commit -m "mensaje del commit" = commitea los archivo del stage, el mensaje ayuda a explicar que se commiteo
- 
+git show nombre-archivo = nos muestra los cambios que han habido
