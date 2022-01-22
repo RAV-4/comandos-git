@@ -8,3 +8,7 @@ git rm cache nombre-archivo = elimina un archivo del stage, en el repositorio si
 git commit -m "mensaje del commit" = commitea los archivo del stage, el mensaje ayuda a explicar que se commiteo
 git show nombre-archivo = nos muestra los cambios que han habido
 git diff idCommit1 idCommit2 = muestra los cambios entre el commit 1 y el commit 2
+git checkout = se trae los ultimos cambios de la rama en que estes ubicado
+git reset idCommit = regresa el repo a la versión del commit
+  Si se acompaña con --soft lo que este en stage en ese momento sigue disponible para el siguiente commit
+  Si se acompaña con --hard regresa todo en el tiempo y borras todo incluido stage
