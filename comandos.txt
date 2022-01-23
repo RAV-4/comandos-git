@@ -1,0 +1,29 @@
+En este archivo documentaré los comandos mas comunes de git
+
+git init = inicia el repositorio
+git status = nos indica el estado en el que se encuentra el repositorio
+git add nombre-archivo = adiciona el archivo referenciado al stage y lo deja listo para commitear
+git add . = adiciona todos los archivos con cambios al stage y los deja listos para commitear
+git rm --cache = Elimina los archivos de nuestro repositorio local y del área de staging,
+                pero los mantiene en nuestro disco duro. Básicamente le dice a Git que deje
+                de trackear el historial de cambios de estos archivos, por lo que pasaran a un estado untracked.
+git rm --force = Elimina los archivos de Git y del disco duro. Git siempre guarda todo,
+                por lo que podemos acceder al registro de la existencia de los archivos,
+                de modo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados)
+git commit -m "mensaje del commit" = commitea los archivo del stage, el mensaje ayuda a explicar que se commiteo
+git show nombre-archivo = nos muestra los cambios que han habido
+git diff idCommit1 idCommit2 = muestra los cambios entre el commit 1 y el commit 2
+git checkout = se trae los ultimos cambios de la rama en que estes ubicado
+git reset idCommit = regresa el repo a la versión del commit
+  Si se acompaña con --soft lo que este en stage en ese momento sigue disponible para el siguiente commit
+  Si se acompaña con --hard regresa todo en el tiempo y borras todo incluido stage
+git reset HEAD = Este es el comando para sacar archivos del área de staging.
+  No para borrarlos ni nada de eso, solo para que los últimos cambios de estos
+  archivos no se envíen al último commit, a menos que cambiemos de opinión y
+  los incluyamos de nuevo en staging con git add, por supuesto.
+git commit -am "Mensaje del commit" = git add y git commit, sirve para los casos en los cambios son sobre archivos ya trackeados
+git branch nombre_branch = crea el branch con el nombre digitado
+git checkout nombre_branch = nos posisiona sobre el branch especificado
+git checkout -b nombre_branch = crea un branch con el nombre digitado y nos posiciona sobre el mismo
+git merge nombre_branch = trae lo del branch digitado al branch en le que estoy posicionado
+git remote add origin ulr_repositorio = le linkeamos a nuestro repositorio local un repositorio remoto
