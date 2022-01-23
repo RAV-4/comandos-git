@@ -25,3 +25,5 @@ git commit -am "Mensaje del commit" = git add y git commit, sirve para los casos
 git branch nombre_branch = crea el branch con el nombre digitado
 git checkout nombre_branch = nos posisiona sobre el branch especificado
 git checkout -b nombre_branch = crea un branch con el nombre digitado y nos posiciona sobre el mismo
+git merge nombre_branch = trae lo del branch digitado al branch en le que estoy posicionado
+git remote add origin ulr_repositorio = le linkeamos a nuestro repositorio local un repositorio remoto
